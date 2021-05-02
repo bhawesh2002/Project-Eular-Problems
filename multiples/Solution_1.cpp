@@ -1,49 +1,35 @@
 /*If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-Find the sum of all the multiples of 3 or 5 below 1000.*/
+Find the sum of all the multiples of 3 or 5 below 1000.
+<This is the second solution to the problem>*/
 
 #include <iostream>
 
 using namespace std;
 
 int main(){
-    int count;
-    cout << "Enter Any number : ";
-    cin >> count;
-    int list[count];
-    int j = 0;
-    int k = 0;
-    int common;
+    int num;
+    cout << "Enter any number: ";
+    cin >> num;
     int sum3 = 0;
     int sum5 = 0;
-    int sum15 = 0;
-    for (int  i = 0; i < count; i++)
+    int common_multiple = 0;
+    for (int i = 0; i < num; i++)
     {
-        list[i] = i;
-        double formula3 = list[i]/double(3);
-        double formula5 = list[i]/double(5);
-        double formula15 = list[i]/double(15);
-        
-        if (formula3 == j)
+        if (i % 3 == 0)
         {
-            j++;
-            sum3 += list[i]; 
+            sum3 += i;
         }
-        if (formula5 == k)
+        if (i % 5 == 0)
         {
-            k++;
-            sum5 += list[i];
+            sum5 += i;
         }
-        if (formula15 == common)
+        if (i % 15 == 0)
         {
-            common++;
-            sum15 += list[i];
-        }
-        
-
+            common_multiple += i;
+        }             
     }
-    cout << sum15 << endl;
-    int total = (sum3 + sum5) - sum15;
-    cout << "Sum of multiples of 3 and 5 under " <<  count <<" is " << total << endl;
-    return 0;
-    
+    int total = (sum3 + sum5) - common_multiple;
+    cout << "The sum of numbers below " << num << " which are the multiples of 3 & 5 is " << total << endl;
+
+    return 0;  
 }
