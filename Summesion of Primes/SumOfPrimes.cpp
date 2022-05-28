@@ -10,11 +10,22 @@ int main()
 {
     int counter = 2000000;
     int prime;
-    for (int i = 1; i <= 10; i++)
+    int sum = 0;
+    for (int num = 2; num < counter; num++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int factor = 2; factor <= num; factor++)
         {
-            
+            if (num % factor == 0) // yields numbers that gives remainder 0 when num % factor.ForEx:- 2,3,2,5,2,3,7etc.
+            {
+                int check = num / factor;
+                if (check == 1) // after division if num/factor is 1 then it is a prime number
+                {
+                    prime = factor;
+                    sum = sum + prime;
+                }
+                break;
+            }
         }
     }
+    cout << sum << endl;
 }
