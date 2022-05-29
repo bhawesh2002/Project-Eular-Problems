@@ -19,8 +19,9 @@ using namespace std;
 int main()
 {
     int counter = 1;
-    int terms;
+    int largest_terms;
     int num = 1;
+    int starting;
     while (num <= 13)
     {
         if (num % 2 == 0)
@@ -36,11 +37,17 @@ int main()
             counter++;
         }
         cout << " + ";
-        if (num == 1)
+        if (num <= 1)
         {
             cout << num;
-            num = 1;
+            counter = 1;
+            if (counter > largest_terms)
+            {
+                largest_terms = counter;
+            }
         }
     }
-    cout << "\nCounter = " << counter << endl;
+    cout << "\nLargest Terms = " << largest_terms << endl;
+    cout << num << endl;
+    return 0;
 }
