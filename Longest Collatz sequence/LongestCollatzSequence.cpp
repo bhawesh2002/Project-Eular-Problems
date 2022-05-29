@@ -42,6 +42,31 @@ void collatz::set_value()
     starting++;
     num = starting;
 }
+void collatz::sequence()
+{
+
+    while (starting <= 13)
+    {
+        if (num % 2 == 0)
+        {
+            cout << num;
+            num = num / 2;
+            counter++;
+        }
+        else if (num % 2 != 0)
+        {
+            cout << num;
+            num = (num * 3) + 1;
+            counter++;
+        }
+        cout << " + ";
+        if (num <= 1)
+        {
+            cout << num << endl;
+            set_value();
+        }
+    }
+}
 int main()
 {
     int largest_terms;
