@@ -16,32 +16,37 @@ NOTE: Once the chain starts the terms are allowed to go above one million.*/
 
 using namespace std;
 
-int main()
+class collatz
 {
-    int counter = 1;
-    int largest_terms;
     int starting = 1;
-    int num ;
-    while (num = starting)
+    int num;
+    int counter = 1;
+
+public:
+    collatz()
     {
-        if (num % 2 == 0)
-        {
-            cout << num;
-            num = num / 2;
-            counter++;
-        }
-        else if (num % 2 != 0)
-        {
-            cout << num;
-            num = (num * 3) + 1;
-            counter++;
-        }
-        cout << " + ";
-        if (num <= 1)
-        {
-            cout << num;
-        }
+        num = starting;
     }
 
+    void print_values()
+    {
+        cout << starting << endl;
+        cout << num << endl;
+    }
+    void set_value();
+    void sequence();
+};
+
+void collatz::set_value()
+{
+    starting++;
+    num = starting;
+}
+int main()
+{
+    int largest_terms;
+    collatz c1;
+    c1.set_value();
+    c1.sequence();
     return 0;
 }
