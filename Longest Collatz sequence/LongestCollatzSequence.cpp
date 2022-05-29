@@ -22,17 +22,12 @@ class collatz
     int num;
     int counter = 1;
     int largest_sequence;
+    int largest_value = 0;
 
 public:
     collatz()
     {
         num = starting;
-    }
-
-    void print_values()
-    {
-        cout << starting << endl;
-        cout << num << endl;
     }
     void set_value();
     void sequence();
@@ -64,10 +59,16 @@ void collatz::sequence()
         if (num <= 1)
         {
             cout << num << endl;
+            largest_sequence = counter;
+            if (largest_sequence > counter)
+            {
+                largest_value = starting;
+            }
             counter = 1;
             set_value();
         }
     }
+    cout << "largest Value :" << largest_value << endl;
 }
 int main()
 {
