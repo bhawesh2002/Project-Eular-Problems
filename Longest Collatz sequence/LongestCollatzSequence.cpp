@@ -59,12 +59,12 @@ void collatz::sequence()
         if (num <= 1)
         {
             cout << num << endl;
-            if (counter > largest_sequence)
+            /*if (counter > largest_sequence)
             {
                 largest_sequence = counter;
                 largest_value = starting;
                 cout << "largest Value :" << largest_value << endl;
-            }
+            }*/
             counter = 1;
             set_value();
         }
