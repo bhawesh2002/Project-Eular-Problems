@@ -20,9 +20,9 @@ int main()
 {
     int counter = 1;
     int largest_terms;
-    int num = 1;
-    int starting;
-    while (num <= 13)
+    int starting = 1;
+    int num ;
+    while (num = starting)
     {
         if (num % 2 == 0)
         {
@@ -33,21 +33,15 @@ int main()
         else if (num % 2 != 0)
         {
             cout << num;
-            num = (3 * num) + 1;
+            num = (num * 3) + 1;
             counter++;
         }
         cout << " + ";
         if (num <= 1)
         {
             cout << num;
-            counter = 1;
-            if (counter > largest_terms)
-            {
-                largest_terms = counter;
-            }
         }
     }
-    cout << "\nLargest Terms = " << largest_terms << endl;
-    cout << num << endl;
+
     return 0;
 }
