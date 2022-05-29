@@ -41,7 +41,7 @@ void collatz::set_value()
 void collatz::sequence()
 {
 
-    while (starting <= 13)
+    while (starting <= 20)
     {
         if (num % 2 == 0)
         {
