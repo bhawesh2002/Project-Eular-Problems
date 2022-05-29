@@ -21,6 +21,7 @@ class collatz
     int starting = 1;
     int num;
     int counter = 1;
+    int largest_sequence;
 
 public:
     collatz()
@@ -63,6 +64,7 @@ void collatz::sequence()
         if (num <= 1)
         {
             cout << num << endl;
+            counter = 1;
             set_value();
         }
     }
