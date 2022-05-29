@@ -45,20 +45,16 @@ void collatz::sequence()
     {
         if (num % 2 == 0)
         {
-            cout << num;
             num = num / 2;
             counter++;
         }
         else if (num % 2 != 0)
         {
-            cout << num;
             num = (num * 3) + 1;
             counter++;
         }
-        cout << " + ";
         if (num <= 1)
         {
-            cout << num << endl;
 
             if (counter > largest_sequence)
             {
