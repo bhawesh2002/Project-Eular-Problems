@@ -2,11 +2,12 @@
 
 What is the sum of the digits of the number 2^1000?*/
 
-
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
 int main()
 {
+    long long ans = pow(2, 1000);
+    cout << ans << endl;
 }
