@@ -17,7 +17,6 @@ int main()
     {
         result = result * i;
     }
-
     cout << result << endl;
     return 0;
 }
