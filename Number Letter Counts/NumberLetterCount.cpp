@@ -11,20 +11,4 @@ using namespace std;
 
 int main()
 {
-    string num_to_letter[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-    string tenth_place[9] = {"ten", "twenty", "thrity", "fourty", "fifty", "sixty", "seventy", "eighty", "ninty"};
-    string thousand = "thousand";
-    int num;
-    cout << "Enter A Number: ";
-    cin >> num;
-    int last;
-    int counter = 0;
-    while (num != 0)
-    {
-        last = num % 10;
-        num = num / 10;
-        cout << last;
-        counter++;
-    }
-    cout << "\nNo of digits: " << counter;
 }
