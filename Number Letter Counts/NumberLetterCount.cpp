@@ -11,10 +11,17 @@ using namespace std;
 
 int main()
 {
-    string num_to_letter[10] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+    string num_to_letter[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    string tenth_place[9] = {"ten","twenty","thrity","fourty","fifty","sixty","seventy","eighty","ninty"};
     int num;
     cout << "Enter A Number: ";
     cin >> num;
     string str = to_string(num);
-    cout << str.length() << endl;
+    int counter = 0;
+    for (int i = 0; i < str.length(); i++)
+    {
+        if (str.length() == 3)
+        {
+        }
+    }
 }
