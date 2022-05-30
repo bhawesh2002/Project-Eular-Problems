@@ -12,4 +12,5 @@ using namespace std;
 int main()
 {
     string ones[] = {"one","two","three","four","five","six","seven","eight","nine"};
+    string tens[] = {"ten","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"};
 }
