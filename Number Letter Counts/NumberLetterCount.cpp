@@ -16,6 +16,20 @@ int main()
     string num;
     cout << "Enter a number: ";
     cin >> num;
-    cout << num << "\n" << "No of terms: " << num.length() << endl;
+    string in_words;
+    for (int i = 0; i < num.length(); i++)
+    {
+        if (i == 0)
+        {
+            for (int j = 0; j < 9; j++)
+            {
+                if (j == num[i])
+                {
+                    /* code */
+                }
+            }
+        }
+    }
+
     return 0;
 }
