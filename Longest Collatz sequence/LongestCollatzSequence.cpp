@@ -41,7 +41,7 @@ void collatz::set_value()
 void collatz::sequence()
 {
 
-    while (starting <= 1000000)
+    while (starting < 1000000)
     {
         if (num % 2 == 0)
         {
@@ -66,7 +66,8 @@ void collatz::sequence()
         }
     }
 
-    cout << "Largest_value : " << largest_value << endl;
+    cout << "Largest_value : " << 
+    largest_value << endl;
 }
 int main()
 {
