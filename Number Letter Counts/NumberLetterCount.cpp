@@ -16,4 +16,5 @@ int main()
     cout << "Enter A Number: ";
     cin >> num;
     string str = to_string(num);
+    cout << str.length() << endl;
 }
