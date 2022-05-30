@@ -11,8 +11,10 @@ using namespace std;
 
 int main()
 {
+    string num_to_letter[10] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
     int num;
     cout << "Enter A Number: ";
     cin >> num;
     string str = to_string(num);
+    cout << sizeof(str) << endl;
 }
