@@ -16,4 +16,6 @@ int main()
     string num;
     cout << "Enter a number: ";
     cin >> num;
+    cout << num << "\n" << "No of terms: " << num.length() << endl;
+    return 0;
 }
