@@ -11,9 +11,8 @@ using namespace std;
 
 int main()
 {
-    int res[200];
     int result = 1;
-    for (int i = 1; i <= 10; i++)
+    for (int i = 90; i <= 100; i++)
     {
         result = result * i;
     }
